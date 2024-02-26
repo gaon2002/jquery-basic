@@ -12,14 +12,14 @@ $(function() {
 
     // 趣味(チェックボックスを取得する)
     $('[name="hobby"]:checked').each( function() {  //functionの代わりに()=>は使えないか？
-      // $(this)は1つずつの選択された要素を意味する
-      console.log('趣味：' + $(this).val());
-    });
+       // $(this)は1つずつの選択された要素を意味する
+       console.log('趣味：' + $(this).val());
+     });
   });
 
   // inputイベント(名前の入力）でテキストボックスの値を取得する
   $('[name="username"]').on("input", function() { // ()=> は使えない？　これに変更すると動作しない
-    let input = $(this).val();
+    let input = $(this).val(); //自動的に$(this)ができる？
 
     // 入力文字があればボタンを押せる、なければボタンを押せなくする
     if (input) { //この条件文でinputされているかどうかが判断できる？
