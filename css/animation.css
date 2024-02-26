@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+.box{
+  width: 200px;
+  height: 200px;
+  background-color: pink;
+}
+
+.box2{
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+}
